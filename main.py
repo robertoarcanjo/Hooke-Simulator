@@ -37,7 +37,7 @@ fig = plt.figure()
 
 ax = fig.add_subplot(111)
 ax.set_xlabel("Deformação")
-ax.set_ylabel("Tensão")
+ax.set_ylabel("Tensão ")
 
 
 ax.plot(x, y)
