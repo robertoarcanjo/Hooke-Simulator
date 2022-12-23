@@ -17,7 +17,7 @@ label2.pack()
 entry = tk.Entry(root)
 entry.pack()
 texto_digitado = entry.get()
-angulo = 60
+angulo = 0
 
 def processar_texto():
     texto_digitado = entry.get()
@@ -35,10 +35,11 @@ def update_plot(angulo):
 
     ax.clear()
     ax.plot(x, y)
-
-    # Adicionar o ângulo e o ponto médio ao gráfico
-    ax.text(0.05, 0.95, f"ângulo: {angulo}°", transform=ax.transAxes, verticalalignment="top")
+    #Mostrando dois pontos do gráfico
+    print("(",x[10],",",y[10],")\n")
+    print("(",x[50],",",y[50],")\n")
     canvas.draw()
+
 
 button = tk.Button(root, text="Enviar", command=processar_texto)
 button.pack()
@@ -59,4 +60,10 @@ plot_widget = canvas.get_tk_widget()
 plot_widget.pack(side="top", fill="both", expand=True)
 
 
+
+
 root.mainloop()
+
+
+
+
