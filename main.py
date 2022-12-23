@@ -1,9 +1,9 @@
 import tkinter as tk
-import sqlite3 
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from ttkwidgets import Table
 import math
+
 
 root = tk.Tk()
 
@@ -35,10 +35,6 @@ def update_plot(angulo):
 
     ax.clear()
     ax.plot(x, y)
-
-    # Calcular o ponto médio
-    x_mid = (x[0] + x[-1]) / 2
-    y_mid = (y[0] + y[-1]) / 2
 
     # Adicionar o ângulo e o ponto médio ao gráfico
     ax.text(0.05, 0.95, f"ângulo: {angulo}°", transform=ax.transAxes, verticalalignment="top")
