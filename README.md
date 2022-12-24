@@ -1,11 +1,10 @@
-Este projeto é a resolução de uma atividade na disciplina de introdução à ciência dos materiais. 
+This project is the resolution of an activity in the discipline of Introduction to Materials Science.
 
-Programa escrito em python. Com uma interface gráfica para interação com o usuário.
+Program written in python. With a graphical interface for user interaction.
 
-As bibliotecas necessárias são:
+The necessary libraries are:
 -tkinter
 -matplotlib
 -math
 
-O programa gera um gráfico interativo de tensão vs deformação no intervalo fixo de 0 até 1, para um angulo escolhido pelo usuário.
-
+The program generates an interactive graph of stress vs strain in the fixed range from 0 to 1, for an angle chosen by the user.
